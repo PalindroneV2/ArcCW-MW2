@@ -47,7 +47,18 @@ SWEP.Delay = 0.009 -- 60 / RPM.
 SWEP.Num = 6 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
+        PrintName = "SINGLE",
         Mode = 1,
+    },
+    {
+        PrintName = "BOTH",
+        Mode = 1,
+        Mult_Recoil = 2,
+        Mult_RecoilSide = 2,
+        Override_AmmoPerShot = 2,
+        Override_Num = 12,
+        Mult_Damage = 2,
+        Mult_DamageMin = 0,
     },
     {
         Mode = 0,
